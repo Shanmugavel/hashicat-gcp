@@ -49,7 +49,6 @@ resource "google_compute_instance" "hashicat" {
   machine_type = var.machine_type
 
 
-  labels = { "department " : "devops"}
   boot_disk {
     initialize_params {
       image = "ubuntu-os-cloud/ubuntu-1804-lts"
@@ -70,6 +69,7 @@ resource "google_compute_instance" "hashicat" {
 
   labels = {
     name = "hashicat"
+    department = "devops"
   }
 
 }
