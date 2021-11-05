@@ -1,8 +1,8 @@
 module "network" {
-  source  = "app.terraform.io/ricardo-gcp-training/network/google"
+  source  = "app.terraform.io/shan-tf-training/network/google"
   version = "3.4.0"
   # insert required variables here
-  network_name = "shan-network"
+    network_name = "shan-network"
   project_id   = var.project
   subnets = [
     {
@@ -12,6 +12,5 @@ module "network" {
     }
   ]
 }
-
 
 
