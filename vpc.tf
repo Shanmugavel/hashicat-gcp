@@ -21,7 +21,7 @@ module "vpc" {
         ip_cidr_range = "192.168.64.0/24"
       },
     ]
-
+ 
   }
 
   routes = [
